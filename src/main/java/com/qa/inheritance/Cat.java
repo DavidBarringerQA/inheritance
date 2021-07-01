@@ -10,10 +10,6 @@ public class Cat extends Animal {
     super(name, species, legs, age);
   }
 
-  public void speak() {
-    System.out.println("Cat noise");
-  }
-
   public void scratch(Animal target) {
     System.out.println(this.getName() + " scratches " + target.getName());
   }
