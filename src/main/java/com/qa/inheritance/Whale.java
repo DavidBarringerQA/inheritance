@@ -1,6 +1,6 @@
 package com.qa.inheritance;
 
-public class Whale extends Animal {
+  public class Whale extends Animal implements Speak, Swim {
 
   public Whale() {
     super("", "whale", 0, 0);
@@ -12,6 +12,14 @@ public class Whale extends Animal {
 
   public void speak() {
     System.out.println("Whale noise");
+  }
+
+  public void shout() {
+      System.out.println("WHALE NOISE");
+  }
+
+  public void swim() {
+    System.out.println("The whale swims");
   }
 
   public void surface() {

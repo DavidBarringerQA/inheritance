@@ -1,6 +1,6 @@
 package com.qa.inheritance;
 
-public class Animal {
+public abstract class Animal {
   private String name;
   private String species;
   private int legs;
@@ -15,10 +15,6 @@ public class Animal {
     this.species = species;
     this.legs = legs;
     this.age = age;
-  }
-
-  public void speak() {
-    System.out.println("Animal noise");
   }
 
   public String getName() {
